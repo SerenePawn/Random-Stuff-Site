@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+        {% for good in goods %}
+            <div class="good" id="{{ good.id }}">
+                <img height="300" src="{{ good.goods_pic.url }}" alt="{{ good.goods_pic }}" class="hover-image">
+                <p class="focused name">{{ good.goods_name }}</p> <br>
+                <p class="focused">Цена: {{ good.goods_price }} р.</p>
+                <p class="focused">{{ good.goods_description }}</p>
+            </div>
+        {% endfor %}
+{% endblock %}
+

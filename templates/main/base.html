@@ -1,0 +1,86 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv='refresh' content='-1'>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='{% static 'css/style.css' %}'>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/base.js' %}"></script>
+    <title>Document</title>
+</head>
+<body>
+<header class="head">
+    <div class="menu">
+        </div>
+    {% csrf_token %}
+        <div class="header link-1">
+            <p class="link-text">Вход</p>
+        </div>
+        <div class="header link-2">
+            <p class="link-text">Регистрация</p>
+        </div>
+        <div class="header link-3">
+            <p class="link-text">Помощь/FAQ</p>
+        </div>
+    <div class="search">
+        <input type="text" class="searchinput" placeholder="Поиск товаров">
+        <input type="button" value="Go!" class="searchbutton">
+    </div>
+</header>
+    <div class="flextest">
+    <div class="leftsidebar sidebar">
+        float: left - reminder.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quia, architecto totam dignissimos ipsa! Sapiente laudantium, eligendi possimus molestiae quidem dolor quia quae accusantium voluptatem a? Laboriosam vel dignissimos dicta ducimus, dolore explicabo vitae eos sit. Error, saepe eius architecto? Minus est numquam earum natus eum asperiores, similique temporibus ea corrupti eveniet, ipsum aspernatur veritatis totam in laboriosam enim porro inventore, dignissimos quam voluptatem! Doloribus nam laboriosam, provident facilis ipsam nulla alias in, nesciunt reiciendis obcaecati nostrum saepe veritatis incidunt. Ab aspernatur fugit ducimus ratione deleniti, consectetur dolor error assumenda totam quidem porro eveniet doloribus nulla soluta voluptate ipsum tempora laborum aut recusandae repellat fuga reprehenderit! At culpa sed cum provident, iure incidunt voluptate adipisci quidem, ea, aliquam iusto sapiente voluptatem excepturi totam eveniet ipsam accusamus ipsa sunt, nemo assumenda! Aspernatur debitis, eaque ipsam totam iure, assumenda, possimus laudantium rem tempore deserunt eum architecto minima dolores. Amet voluptatum facilis ducimus. Explicabo pariatur iusto nesciunt, cum, iste molestias eaque reiciendis unde accusamus eius perferendis, velit delectus illo quaerat quo. Veritatis incidunt molestiae doloribus nesciunt esse eligendi sequi. Numquam quam vero, harum inventore suscipit porro unde, consequatur quibusdam a esse velit eos quos quas atque cumque quia pariatur. Aut veritatis rem nam.
+    </div>
+<div class="body">
+{% block content %}
+    <div class="body" style="color:darkred;text-decoration: underline;font-size:32px;">
+        В отличии от остальных сайтов, это просто поле, где валяется текст. <br>Здесь ничего нет!<br> <h2>Спасите!</h2>
+    </div>
+{% endblock %}
+</div>
+    <div class="rightsidebar sidebar">
+    float: right - reminder.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ducimus laborum rerum, atque sint eaque eveniet beatae dolorum quae voluptate optio sunt soluta suscipit adipisci. Consectetur optio illum natus repellendus eveniet, expedita consequuntur ab doloremque. Sequi possimus itaque at, ratione consequatur mollitia facere nemo, illo alias expedita quas, eius, sed adipisci iste suscipit ad. Reprehenderit quasi sapiente labore sint odit non perferendis sit natus autem, deleniti eum ipsum maiores fugiat, eveniet optio est cupiditate adipisci eaque, qui. Cumque repudiandae ipsa, voluptas illum nostrum, quos blanditiis deserunt maxime totam cupiditate nobis quaerat eveniet quo earum expedita molestias voluptatem assumenda voluptate autem, veniam facilis dignissimos neque, iure minus quibusdam! Sapiente amet, iure sequi fuga adipisci autem tempore qui nihil animi praesentium ipsum repudiandae quis rerum, laudantium ab ratione perferendis consequuntur molestiae nesciunt voluptas odio repellendus beatae! Voluptatem excepturi exercitationem animi enim nisi repellat laboriosam harum, mollitia aut minima necessitatibus, dignissimos eveniet recusandae numquam impedit itaque voluptate veritatis modi ducimus, molestiae, vel provident et culpa? Aperiam quibusdam nobis eum blanditiis placeat, quasi illum laudantium optio voluptatum quo porro hic, quia ut temporibus nemo alias consequuntur neque. Voluptatibus praesentium sint, iure. At cupiditate laboriosam, quod natus necessitatibus cum a dolorum quae iste aspernatur, consequatur repellat delectus eius perspiciatis deserunt odio ab beatae cumque molestias unde! Ab debitis eos iure rem delectus odio in magnam beatae expedita ipsa rerum, molestias, laborum repudiandae sunt dignissimos sequi voluptatum est corrupti dolor cupiditate. Sint impedit sunt quis, suscipit, non sapiente, debitis provident dolorum fugit tenetur doloremque. Ad adipisci officia a reprehenderit ex architecto illum, eos asperiores molestias tempora non, ratione nihil! Blanditiis dolorum, cumque molestiae itaque magnam esse! Nobis ut, quam delectus, eius odio tempore quaerat itaque placeat eligendi rerum vitae molestiae id soluta accusantium! Iusto odio nam quia natus inventore maxime minima accusantium amet, provident, suscipit recusandae praesentium dolorem. Maiores cumque laudantium assumenda, nisi quod esse corporis dignissimos autem? Saepe quisquam incidunt tempore nemo iusto obcaecati sed consequatur, delectus dolorem necessitatibus praesentium ullam, repellendus quos magni repellat totam dolores aspernatur, fugit, neque. Maiores rem incidunt quo. Quas illo aliquid voluptates est aspernatur dolore excepturi, quaerat saepe. Nobis delectus, totam vero ab qui, eius illum similique cumque enim beatae, a earum blanditiis. Doloribus ab minima eius id, quas accusamus! Vel non itaque ex, voluptatum adipisci distinctio reprehenderit autem quia sint asperiores enim voluptas eius porro eos velit tempora facilis nam saepe voluptatem, unde fuga soluta! Perspiciatis, tempora, vel!
+    </div>
+    </div>
+
+<div id="mask"></div>
+<div class="signIn">
+    <div class="authBackground">
+        <h3 class="auth">Авторизация</h3>
+    </div>
+    <form action="#">
+        <input type="text" class="textInput" name="username" placeholder="Логин">
+        <input type="password" class="textInput" name="password" placeholder="Пароль">
+        <button class="userLogin">Войти</button>
+    </form>
+</div>
+<div class="menuBackground">
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li class="category">Категория-1</li>
+        <li class="category">Категория-2</li>
+        <li class="category">Категория-3</li>
+        <li class="category">Категория-4</li>
+        <li class="category">Категория-5</li>
+        <li class="category">Категория-6</li>
+    </ul>
+</div>
+
+    <footer>
+        <p class="info">
+            E-mail: serenepawn@gmail.com <br>
+            Телефон: 8(800)555-35-35 <br>
+            ул. Пушкина, дом Колотушкина <br>
+            GitHub: <a
+            href="https://github.com/SerenePawn">
+            SerenePawn
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
